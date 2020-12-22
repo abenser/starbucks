@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true"%>
-
+<!--  제발 연동좀 되봐라 ㅈ같네 진짜   -->
 <!DOCTYPE html>
 <html>
 <head>
