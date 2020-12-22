@@ -5,40 +5,58 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Starbucks</title>
+<title>Starbucks</title>    
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="plugins/aos/aos.css" />
+    <link rel="stylesheet" href="plugins/animate/animate.css"/>
+    
+    <!-- index style -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	<link rel="stylesheet" type="text/css" href="css/navigation.css" />
+	
+	<!-- font setting -->
+	 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap" rel="stylesheet">
 
+ 
 </head>
 <body>
-<!--  스타일 적용 전  -->  
+
 <div class="container">
    
-    <!-- 헤더 -->
+   
+    <!-- header -->
     <div class="header-background">
       <header id="header" class="header clearfix">
-        <h1 class="header-heading">
+        <h1 class="header-head">
           <a href="index.html" title="메인 화면으로 이동합니다."></a>
         </h1>
-        <nav class="utility clearfix">
-          <h2 class="a11y-hidden">회원 메뉴(최상단)</h2>
-          <ul class="utility-list clearfix">
+        <nav class="util clearfix">
+          <h2 class="hidden">회원 메뉴(최상단)</h2>
+          <ul class="util-list clearfix">
             <li><a href="#">Sign In</a></li>
             <li><a href="#">My Starbucks</a></li>
             <li><a href="#">Customer Service & Ideas</a></li>
             <li><a href="#">Find a Store</a></li>
           </ul>
-          <h2 class="a11y-hidden">검색</h2>
+          <h2 class="hidden">검색</h2>
           <form action="#" method="GET" class="search-form">
             <fieldset>
               <legend>검색 폼</legend>
-              <!-- 검색 폼 만들기 -->
+              <label for="search" class="hidden">검색어</label>
+              <input type="search" id="search" name="search" placeholder="검색어를 입력하세요." required />
+              <button type="button" role="link" class="search-btn">검색</button>
             </fieldset>
           </form>
         </nav>
         <nav class="navigation">
-          <h2 class="a11y-hidden">상단 네비게이션(메뉴)</h2>
+          <h2 class="hidden">상단 네비게이션(메뉴)</h2>
           <ul class="menu clearfix">
             <li class="menu-item">
-              <h3 class="sub-menu-heading"><a href="#" class="menu-heading">COFFEE</a></h3>
+              <h3 class="sub-menu-head"><a href="#" class="menu-head">COFFEE</a></h3>
               <div class="sub-menu-box">
                 <ul class="sub-menu">
                   <li>
@@ -103,7 +121,7 @@
               </div>
             </li>
             <li class="menu-item">
-              <h3 class="sub-menu-heading"><a href="#" class="menu-heading">MENU</a></h3>
+              <h3 class="sub-menu-head"><a href="#" class="menu-head">MENU</a></h3>
               <div class="sub-menu-box">
                 <ul class="sub-menu">
                   <li>
@@ -171,7 +189,7 @@
               </div>
             </li>
             <li class="menu-item">
-              <h3 class="sub-menu-heading"><a href="#" class="menu-heading">STORE</a></h3>
+              <h3 class="sub-menu-head"><a href="#" class="menu-head">STORE</a></h3>
               <div class="sub-menu-box">
                 <ul class="sub-menu">
                   <li>
@@ -211,7 +229,7 @@
               </div>
             </li>
             <li class="menu-item">
-              <h3 class="sub-menu-heading"><a href="#" class="menu-heading">RESPONSIBILITY</a></h3>
+              <h3 class="sub-menu-head"><a href="#" class="menu-head">RESPONSIBILITY</a></h3>
               <div class="sub-menu-box">
                 <ul class="sub-menu">
                   <li>
@@ -262,7 +280,7 @@
               </div>
             </li>
             <li class="menu-item">
-              <h3 class="sub-menu-heading"><a href="#" class="menu-heading">STARBUCKS REWARDS</a></h3>
+              <h3 class="sub-menu-head"><a href="#" class="menu-head">STARBUCKS REWARDS</a></h3>
               <div class="sub-menu-box">
                 <ul class="sub-menu">
                   <li>
@@ -273,7 +291,6 @@
                       <li><a href="#">스타벅스 별</a></li>
                       <li><a href="#">자주하는 질문</a></li>
                     </ul>
-                  </li>
                   <li>
                     <h4><a href="#">스타벅스 카드</a></h4>
                     <ul>
@@ -304,7 +321,7 @@
               </div>
             </li>
             <li class="menu-item">
-              <h3 class="sub-menu-heading"><a href="#" class="menu-heading">WHAT`S NEW</a></h3>
+              <h3 class="sub-menu-head"><a href="#" class="menu-head">WHAT`S NEW</a></h3>
               <div class="sub-menu-box">
                 <ul class="sub-menu">
                   <li>
@@ -355,5 +372,6 @@
         </nav>
       </header>
     </div>
+    <script src="js/menuHoverHandler.js"></script>
 </body>
 </html>
