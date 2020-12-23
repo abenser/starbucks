@@ -1,0 +1,151 @@
+.main {
+    /**갑자기 사라진 이유?**/
+    background-image: url(img/2020_xmas2_bg.jpg);
+
+    margin-top: 123px;
+
+}
+
+.main_inner {
+    position: relative;
+    margin: 0 auto;
+    padding: 60px 0 150px 0;
+    width: 1100px;
+}
+
+/**image appear**/
+.main_inner-slogan {
+
+    width: 250px;
+    font-size: 7rem;
+    font-weight: 500;
+    opacity: 0;
+    animation: opacityAni 500ms ease-in-out forwards;
+    animation-delay: 1500ms;
+}
+
+/**image appear 왜 이미지가 안보얀안안안아낳ㅁㅈㄷ애ㅑㅕ로ㅓ**/
+.inner-set {
+    position: absolute;
+
+    visibility: hidden;
+}
+
+.inner-set::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    max-height: 98px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/**drink set */
+.set_01 {
+    bottom: 12.5%;
+    left: 26%;
+    width: 29%;
+    max-width: 308px;
+}
+
+.set_01::after {
+    top: 98%;
+    left: 0;
+    width: 60%;
+    max-width: 184px;
+    background-image: url(img/2020_xmas2_dolce_tit.png);
+}
+
+.set_02 {
+    bottom: 20%;
+    left: 39.7%;
+    width: 25%;
+    max-width: 263px;
+}
+
+.set_02::after {
+    top: -27%;
+    left: -12%;
+    width: 88%;
+    max-width: 230px;
+    background-image: url(img/2020_xmas2_dark_blended_tit.png);
+}
+
+.set_03 {
+    bottom: 15%;
+    left: 55.7%;
+    width: 26%;
+    max-width: 281px;
+    z-index: 1;
+}
+
+.set_03::after {
+    top: 103%;
+    left: -7%;
+    width: 80%;
+    max-width: 223px;
+    background-image: url(img/2020_xmas2_relaxer_tit.png);
+}
+
+.set_04 {
+    bottom: 32%;
+    left: 69%;
+    width: 26%;
+    max-width: 275px;
+}
+
+.set_04:after {
+    top: 2%;
+    left: 51%;
+    width: 67%;
+    max-width: 183px;
+    background-image: url(img/2020_xmas2_dark_tit.png);
+}
+
+.set_05 {
+    bottom: 20%;
+    left: 78.5%;
+    width: 26%;
+    max-width: 294px;
+}
+
+.set_05::after {
+    top: 90%;
+    left: 1%;
+    width: 66%;
+    max-width: 183px;
+    background-image: url(img/2020_xmas2_panna.png);
+}
+
+.set_06 {
+    bottom: 20%;
+    left: 78.5%;
+    width: 26%;
+    max-width: 294px;
+}
+
+.set_06::after {
+    top: 90%;
+    left: 1%;
+    width: 66%;
+    max-width: 183px;
+    background-image: url(img/2020_xmas2_popconrn_tit.png);
+}
+
+.set_07 {
+    bottom: 20%;
+    left: 78.5%;
+    width: 26%;
+    max-width: 294px;
+}
+
+.set_07::after {
+    top: 90%;
+    left: 1%;
+    width: 66%;
+    max-width: 183px;
+    background-image: url(2020_xmas2_nut_tit.png);
+}
+
+/**자세히보기 버튼 세팅**/

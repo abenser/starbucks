@@ -2,112 +2,113 @@
 /* on the navigation */
 
 .header-background {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #f6f5ef;
-  z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f6f5ef;
+    z-index: 9;
 }
 
 .header {
-  margin: 0 auto;
-  width: 1100px;
+    margin: 0 auto;
+    width: 1100px;
 }
 
 .header-head {
-  float: left;
-  padding: 24px 0;
-  font-size: 10px;
+    float: left;
+    padding: 24px 0;
+    font-size: 10px;
 }
 
 .header-head a {
-  position: relative;
-  display: block;
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
-  text-align: center;
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
 }
 
 .header-head a::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/logo.png) no-repeat;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/logo.png) no-repeat;
 }
 
 .util {
-  float: right;
-  min-width: 500px;
-  margin-top: 15px;
-  margin-right: 40px;
+    float: right;
+    min-width: 500px;
+    margin-top: 15px;
+    margin-right: 40px;
 }
 
 .util-list {
-  float: left;
-  padding-top: 3px;
+    float: left;
+    padding-top: 3px;
 }
+
 .util-list li {
-  position: relative;
-  float: left;
+    position: relative;
+    float: left;
 }
 
 .util-list li::after {
-  content: '|';
-  position: absolute;
-  top: 5px;
-  right: 0;
-  color: #555;
+    content: '|';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: #555;
 }
 
 .util-list li:last-child::after {
-  content: '';
+    content: '';
 }
 
 .util-list li a {
-  display: block;
-  padding: 5px 10px;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 1.3rem;
-  color: #555;
+    display: block;
+    padding: 5px 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.3rem;
+    color: #555;
 }
 
-.util-list li a:hover, .util-list li a:focus {
-  text-decoration: underline;
+.util-list li a:hover,
+.util-list li a:focus {
+    text-decoration: underline;
 }
 
 /** search form **/
 
 .search-form {
-  float: left;
-  vertical-align: middle;
+    float: left;
+    vertical-align: middle;
 }
 
 .search-form fieldset {
-  padding: 5px 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
 .search-form fieldset input {
-  font-size: 1.3rem;
-  border: 0;
-  border-radius: 5px;
+    font-size: 1.3rem;
+    border: 0;
+    border-radius: 5px;
 }
 
 .search-form fieldset button {
-  width: 20px;
-  height: 21px;
-  background-color: yellow;
-  text-indent: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  background: url(img/search-icon.png) no-repeat;
+    width: 20px;
+    height: 21px;
+    background-color: yellow;
+    text-indent: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(img/search-icon.png) no-repeat;
 }
+
 /**mouse clickevent, img necessary**/
-
-
